@@ -31,7 +31,8 @@
         height: 100vw;
       }
       .voltar{
-        margin-top: 10px;
+        margin-top: 50px;
+        margin-right: 10px;
         width: 95px;
         
       }
@@ -41,13 +42,23 @@
    <div id="nota"></div>
    <button onclick="limpar()" style="margin-top: 10px;">LIMPAR</button><br>
    <a href="../index.html"><button class="voltar">Voltar</button></a>
+   <a href="../midia/download/notadoaluno.zip" type="application/zip"><button>Baixe a pagina</button></a>
    <script>
      const id = document.getElementById("nota");
      function aluno() {
        const nome = prompt('Nome Do aluno');
        let nota1 = Number(prompt('1° nota do aluno'));
+       if (isNaN(nota1)) {
+         nota1 = 0
+       } 
        let nota2 = Number(prompt('2° nota do aluno'));
+       if (isNaN(nota2)) {
+         nota2 = 0
+       } 
        let nota3 = Number(prompt('3° nota do aluno'));
+       if (isNaN(nota3)) {
+         nota3 = 0
+       }
        const soma = nota1 + nota2 + nota3
        if (soma >= 240) {
          id.innerHTML += `<span>A nota total do aluno:<mark>${nome}</mark> foi <mark>${soma}</mark> portanto ele foi <strong><mark style="color: green;">Aprovado</mark></strong>.</span><br>`

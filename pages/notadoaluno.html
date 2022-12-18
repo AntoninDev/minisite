@@ -1,1 +1,64 @@
-.
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <link rel="stylesheet" href="#">
+      <meta name="theme-color" content="#000000" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+      *{
+        background: black;
+        color: grey;
+        font-size: 15px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;;
+      }
+      button{
+        text-align: center;
+        border: 2px orange solid;
+        border-radius: 2px;
+        background: grey;
+        color: yellow;
+        font-size: 20px;
+        padding: 10px;
+      }
+      div {
+        margin-top: 10px;
+        border: 3px red solid;
+        width: 95vw;
+        height: 100vw;
+      }
+      .voltar{
+        margin-top: 10px;
+        width: 95px;
+        
+      }
+    </style>
+    <body>
+      <button onclick="aluno()">Nota do aluno</button>
+   <div id="nota"></div>
+   <button onclick="limpar()" style="margin-top: 10px;">LIMPAR</button><br>
+   <a href="../index.html"><button class="voltar">Voltar</button></a>
+   <script>
+     const id = document.getElementById("nota");
+     function aluno() {
+       const nome = prompt('Nome Do aluno');
+       let nota1 = Number(prompt('1° nota do aluno'));
+       let nota2 = Number(prompt('2° nota do aluno'));
+       let nota3 = Number(prompt('3° nota do aluno'));
+       const soma = nota1 + nota2 + nota3
+       if (soma >= 240) {
+         id.innerHTML += `<span>A nota total do aluno:<mark>${nome}</mark> foi <mark>${soma}</mark> portanto ele foi <strong><mark style="color: green;">Aprovado</mark></strong>.</span><br>`
+       }else if (soma >= 170 && soma <= 239) {
+         id.innerHTML += `<span>A nota total do aluno:<mark>${nome}</mark> foi <mark>${soma}</mark> portanto ele ficou de <strong><mark style="color: yellow;">Recuperação</mark></strong>.</span><br>`
+       }else {
+           id.innerHTML += `<span>A nota total do aluno: ${nome} foi ${soma} portanto ele foi <mark  style="color: red;">Reprovado</mark>.</span><br>`
+       }}
+       function limpar() {
+         id.innerHTML = ''
+       }
+   </script>
+      </body>
+</html>

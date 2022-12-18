@@ -7,9 +7,12 @@
   text-align: center;
 }
 button {
-  color: yellow;
-  border 2px orange solid
+  color: red;
+  background: grey;
+  border 0.5vw orange solid
   padding: 5vw;
-  margin: 5px;
+  margin: 1vw;
+  height: 10vw;
+  width: 10vw;
   text-align: center;
 }

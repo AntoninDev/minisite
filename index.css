@@ -4,13 +4,13 @@ body{
   background: #614079;
   color: white;
   text-align: center;
-  font-family: 'Poppins', sans-serif;;
+  font-family: 'Poppins', sans-serif;
 }
 button {
-  border: 0.3vw #F9811F solid;
+  border: 0.3vw #000 solid;
   border-radius: 3vw;
   background: grey;
-  color: #E2A60D;
+  color: #000;
   text-decoration: none;
   padding: 1vw;
   height: 15vw;
@@ -21,10 +21,10 @@ button {
   float: right;
 }
 button.left {
-  border: 0.3vw #F9811F solid;
+  border: 0.3vw #000 solid;
   border-radius: 3vw;
   background: grey;
-  color: #E2A60D;
+  color: #000;
   text-decoration: none;
   padding: 1vw;
   height: 15vw;
@@ -64,5 +64,4 @@ img {
   margin-top: 10vw;
   height: 70vw;
   border-radius: 4vw;
-
 }

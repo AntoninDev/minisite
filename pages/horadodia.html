@@ -24,12 +24,11 @@
         </footer>
         
       <script>
-      
-  const hora = new Date().getHours()
   const escreve = document.getElementById("horaDia")
   const section = document.getElementById("escrita")
   const body = document.getElementById("body")
-  
+  setInterval( function () {
+  const hora = new Date().getHours()
   if (hora >= 0 && hora < 6) {
     body.style.background = '#020101'
     body.style.color = 'white'
@@ -49,7 +48,7 @@
     escreve.innerHTML = '<h1>Hora da Noite</h1>'
     section.innerHTML= `<p class="msg">Boa noite, agora são ${hora} horas.</p><br><img src="https://raw.githubusercontent.com/AntoninDev/minisite/main/midia/images/noite.png" class="imgnoite">`
   }
-  
+  }, 1 );
   </script>
       </body>
 </html>

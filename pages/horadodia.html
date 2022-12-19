@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-      <link rel="stylesheet" href="style/horadodia.css">
+      <link rel="stylesheet" href="../style/horadodia.css">
       <meta name="theme-color" content="#000000" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
     <title>Exercicio de horas</title>
     </head>
     <body id="body">
+      
       <header id="horaDia">
       </header>
+      
        <section id="escrita">
          </section>
+         
          <footer>
         <p>•AntoninMaker•</p>
         </footer>
+        
       <script>
   const escreve = document.getElementById("horaDia")
   const section = document.getElementById("escrita")
@@ -39,9 +44,8 @@
     body.style.color = 'white'
     escreve.innerHTML = '<h1>Hora da Noite</h1>'
     section.innerHTML= `<p class="msg">Boa noite, agora são ${hora} horas.</p><br><img src="midia/images/noite.png" class="imgnoite">`
-  }else {
-    escreve.innerHTML = '[ERROR] Hora invalida!'
-  }  }, 1 );
+  }
+  }, 1 );
   </script>
       </body>
 </html>

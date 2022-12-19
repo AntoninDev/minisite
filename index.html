@@ -34,9 +34,10 @@
     function passa() {
       paginas.innerHTML = '<a href="pages/notadoaluno.html"> <img src="pages/midia/images/sitenotadoaluno.jpg"></a><p class="bolinhas">●○</p>'
       descricao.innerHTML = `<h1>Descrição:</h1>
-        <p class="descricao"><strong>Calculador de nota do aluno é uma calculadora simples que calcula se o aluno passou ou nao de acordo com suas notas obs: a ultima nota dobra, Entre e veja clicando na imagem acima.</strong></p>`
+        <p class="descricao"><strong>Calculador de nota do aluno é uma cauculadora simples que caucula se o aluno passou ou nao de acordo com suas notas obs: a ultima nota dobra, Entre e veja clicando na imagem acima.</strong></p>`
         btnvolta.innerHTML = `<button class="left" onclick="volta()"><</button>`
         btnpassa.innerHTML = `<button onclick="volta()">></button>`
+        window.scroll({top: window.innerHeigth, behavior:"smooth"})
     }
     function volta() {
       paginas.innerHTML = '<a href="pages/horadodia.html"> <img src="pages/midia/images/sitehorasdodia.jpg"></a><p class="bolinhas">○●</p>'

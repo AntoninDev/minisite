@@ -1,16 +1,19 @@
+/******************************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 body{
   padding: 0;
   background: #614079;
   color: white;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-}
+  font-family: 'Poppins', sans-serif;}
+
 button {
-  border: 0.3vw #F9811F solid;
+  border: 0.3vw #000 solid;
   border-radius: 3vw;
   background: grey;
-  color: #E2A60D;
+  color: #000;
   text-decoration: none;
   padding: 1vw;
   height: 15vw;
@@ -18,13 +21,13 @@ button {
   font-size: 5vw;
   margin: 1vw;
   margin-top: 55vw;
-  float: right;
-}
+  float: right;}
+
 button.left {
-  border: 0.3vw #F9811F solid;
+  border: 0.3vw #000 solid;
   border-radius: 3vw;
   background: grey;
-  color: #E2A60D;
+  color: #000;
   text-decoration: none;
   padding: 1vw;
   height: 15vw;
@@ -32,8 +35,8 @@ button.left {
   font-size: 5vw;
   margin: 1vw;
   margin-top: 55vw;
-  float: left;
-}
+  float: left;}
+
 section {
   margin-top: 13vw;
   margin-left: 17vw;
@@ -42,26 +45,27 @@ section {
   box-shadow: 1vw 1vw 1vw black;
   text-align: center;
   width: 60vw;
-  height: 90vw;
-}
+  height: 90vw;}
+
 p {
-  font-size: 5vw;
-}
+  font-size: 5vw;}
+  
 p.descricao {
   margin-top: 5vw;
   font-size: 4vw;
-  color: #FFFFFF;
-}
+  color: #FFFFFF;}
+
 p.bolinhas {
   font-size: 5vw;
   color: black;
-  margin-top: -0.5vw;
-}
+  margin-top: -0.5vw;}
+
 h1 {
-  margin-top: 5vw;
-}
+  margin-top: 5vw;}
+
 img {
   margin-top: 10vw;
   height: 70vw;
-  border-radius: 4vw;
-}
+  border-radius: 4vw;}
+  
+  /****************************************************/

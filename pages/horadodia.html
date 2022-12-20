@@ -20,32 +20,6 @@
         <p>•AntoninMaker•</p>
         </footer>
         
-      <script>
-  const escreve = document.getElementById("horaDia")
-  const section = document.getElementById("escrita")
-  const body = document.getElementById("body")
-  setInterval( function () {
-  const hora = new Date().getHours()
-  if (hora >= 0 && hora < 6) {
-    body.style.background = '#020101'
-    body.style.color = 'white'
-    escreve.innerHTML = '<h1>Hora da Madrugada</h1>'
-    section.innerHTML= `<p class="msg">Boa madrugada, agora são ${hora} horas.</p><br><img src="midia/images/madrugada.png" class="imgmadrugada">`
-  }else if (hora < 12) {
-    body.style.background = '#FAF86A'
-    escreve.innerHTML = '<h1>Hora do Dia</h1>'
-    section.innerHTML= `<p>Bom dia, agora são ${hora} horas.</p><br> <img src="midia/images/dia.png" class="imgdia">`
-    }else if (hora < 18) {
-    body.style.background = '#759FF4'
-    escreve.innerHTML = '<h1>Hora da Tarde</h1>'
-    section.innerHTML= `<p class="msg">Boa tarde, agora são ${hora} horas.</p><br><img src="midia/images/tarde.png" class="imgtarde">`
-  }else if (hora <= 23) {
-    body.style.background = '#1F1F20'
-    body.style.color = 'white'
-    escreve.innerHTML = '<h1>Hora da Noite</h1>'
-    section.innerHTML= `<p class="msg">Boa noite, agora são ${hora} horas.</p><br><img src="midia/images/noite.png" class="imgnoite">`
-  }
-  }, 1 );
-  </script>
+      <script src="script/horadodia.js"></script>
       </body>
 </html>

@@ -7,10 +7,10 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 button {
-  border: 0.3vw #000 solid;
+  border: 0.3vw #F9811F solid;
   border-radius: 3vw;
   background: grey;
-  color: #000;
+  color: #E2A60D;
   text-decoration: none;
   padding: 1vw;
   height: 15vw;
@@ -21,10 +21,10 @@ button {
   float: right;
 }
 button.left {
-  border: 0.3vw #000 solid;
+  border: 0.3vw #F9811F solid;
   border-radius: 3vw;
   background: grey;
-  color: #000;
+  color: #E2A60D;
   text-decoration: none;
   padding: 1vw;
   height: 15vw;

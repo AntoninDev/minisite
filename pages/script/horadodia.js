@@ -18,7 +18,7 @@ const escreve = document.getElementById("horaDia")
   }else if (hora < 12) {
     body.style.background = '#FAF86A'
     escreve.innerHTML = '<h1>Hora do Dia</h1>'
-    section.innerHTML= `<p>Bom dia, agora são ${horapm}:${min} e ${sec} segundos.</p><br> <img src="midia/images/dia.png">`
+    section.innerHTML= `<p>Bom dia, agora são ${horapm}:${min} e ${sec} segundos.</p><br> <img src="midia/images/dia.png"><p>IMAGEM BUGADA ARRUMO AO ACORDAR MO SONO</p>`
     }else if (hora < 18) {
     body.style.background = '#759FF4'
     escreve.innerHTML = '<h1>Hora da Tarde</h1>'

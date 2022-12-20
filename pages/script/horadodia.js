@@ -2,7 +2,7 @@ const escreve = document.getElementById("horaDia")
   const section = document.getElementById("escrita")
   const body = document.getElementById("body")
   setInterval( function () {
-  const hora = 6 //new Date().getHours()
+  const hora = new Date().getHours()
   if (hora >= 0 && hora <= 9) {
     var horapm = `0${hora}`
   }else {

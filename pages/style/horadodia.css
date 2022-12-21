@@ -1,15 +1,18 @@
+/******************************************************/
+
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+      
       * {
         height: 20vw;
-        margin-top: 15vw;
-      }
+        margin-top: 10vw;}
+      
       body {
         margin: 0;
         padding: 0;
         text-align: center;
         background: rgb(70, 142, 236);
-        font-family: 'Poppins', sans-serif;
-      }
+        font-family: 'Poppins', sans-serif;}
+      
       section {
         background: white;
         color: black;
@@ -17,33 +20,42 @@
         box-shadow: 1vw 1vw 1vw black;
         height: 50vw;
         width: 80vw;
-        margin: 10vw;
+        margin: 10vw;}
       
-      }
       .imgdia {
         height: 30vw;
         margin-right: 18vw;
-        margin-top: -20vw;
-      }
+        margin-top: -20vw;}
+      
       .imgtarde {
         height: 35vw;
         margin-top: -22vw;
-        margin-left: 8vw;
-      }
+        margin-left: 8vw;}
+        
       .imgnoite {
         height: 53vw;
         margin-top: -24vw;
-        margin-right: 2.5vw;
-      }
+        margin-right: 2.5vw;}
+        
       .imgmadrugada {
         height: 80vw;
         margin-top: -39.5vw;
-        margin-right: 3vw;
-      }
+        margin-right: 3vw;}
+      
       p {
         padding-top: 5vw;
-        font-size: 3vw;
-      }
+        font-size: 3vw;}
+      
       h1 {
-        font-size: 6vw;
-      }
+        font-size: 6vw;}
+      
+      button {
+        text-align: center;
+        height: 5vh;
+        font-size: 3vh;
+        border-radius: 3vw;
+        border: 0.7vw #29292D solid;
+        background: #434343;
+        color: #FFF;}
+        
+/******************************************************/

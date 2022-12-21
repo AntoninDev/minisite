@@ -2,7 +2,7 @@
        let contador = 0;
        let heigth = 35
      function aluno() {
-       id.innerHTML = ' '
+       document.getElementById("p").innerHTML = ' '
        ++contador
        if (contador >= 8) {
          heigth += 10

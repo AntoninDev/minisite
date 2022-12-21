@@ -1,89 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-      <link rel="stylesheet" href="#">
+      <link rel="stylesheet" href="style/notadoaluno.css">
       <meta name="theme-color" content="#000000" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-      *{
-        background: black;
-        color: grey;
-        font-size: 4vw;
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-      }
-      button{
-        text-align: center;
-        border: 0.4vw orange solid;
-        border-radius: 1vw;
-        background: grey;
-        color: yellow;
-        font-size: 5vw;
-        padding: 10px;
-      }
-      div {
-        margin-top: 3vw;
-        margin-left: 0,5vw;
-        border: 0.5vw red solid;
-        border-radius: 1vw;
-        width: 97vw;
-        height: 100vw;
-      }
-      .voltar{
-        margin-top: 5vw;
-        margin-right: 1.5vw;
-        width: 40vw;
-      }
-      span {
-        margin: 1.5vw;
-      }
-    </style>
     <body>
+      
       <button onclick="aluno()" style="margin-top: 2vw;">Nota do aluno</button>
-   <div id="nota"></div>
-   <button onclick="limpar()" style="margin-top: 3vw;">LIMPAR</button><br>
+      
+   <section id="nota"><p id="p">Clique no botão acima e insira as notas, Lembrando que baseado na maioria das estruturas de ensino a ultima nota do trimestre é dobrada.</p></section>
+   
+   <button onclick="limpar()" style="margin-top: 5vw;">LIMPAR</button><br>
+   
    <a href="../index.html"><button class="voltar">Voltar</button></a>
+   
    <a href="midia/download/notadoaluno.zip" type="application/zip"><button>Baixe a pagina</button></a>
-   <script>
-     const id = document.getElementById("nota");
-       let contador = 0;
-       let heigth = 35
-     function aluno() {
-       ++contador
-       if (contador >= 8) {
-         heigth += 10
-         id.style.height = `${heigth}%`;
-       }
-       const nome = prompt('Nome Do aluno');
-       let nota1 = Number(prompt('1° nota do aluno'));
-       if (isNaN(nota1)) {
-         nota1 = 0
-       } 
-       let nota2 = Number(prompt('2° nota do aluno'));
-       if (isNaN(nota2)) {
-         nota2 = 0
-       } 
-       let nota3 = Number(prompt('3° nota do aluno'));
-       if (isNaN(nota3)) {
-         nota3 = 0
-       }
-       const soma = nota1 + nota2 + nota3
-       if (soma >= 240) {
-         id.innerHTML += `<span>A nota total do aluno:<mark>${nome}</mark> foi <mark>${soma}</mark> portanto ele foi <strong><mark style="color: green;">Aprovado</mark></strong>.</span><br>`
-       }else if (soma >= 170 && soma <= 239) {
-         id.innerHTML += `<span>A nota total do aluno:<mark>${nome}</mark> foi <mark>${soma}</mark> portanto ele ficou de <strong><mark style="color: yellow;">Recuperação</mark></strong>.</span><br>`
-       }else {
-           id.innerHTML += `<span>A nota total do aluno: ${nome} foi ${soma} portanto ele foi <mark  style="color: red;">Reprovado</mark>.</span><br>`
-       }}
-       function limpar() {
-         id.innerHTML = ''
-         contador = 0;
-         heigth = 35;
-         id.style.height = `100vw`;
-       }
-   </script>
+   
+   <script src="script/notadoaluno.js"></script>
+   
       </body>
 </html>

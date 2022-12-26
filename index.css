@@ -9,7 +9,7 @@ body{
   text-align: center;
   font-family: 'Poppins', sans-serif;}
 
-button {
+input {
   border: 0.3vw #000 solid;
   border-radius: 3vw;
   background: grey;
@@ -23,7 +23,7 @@ button {
   margin-top: 55vw;
   float: right;}
 
-button.left {
+input.left {
   border: 0.3vw #000 solid;
   border-radius: 3vw;
   background: grey;
@@ -53,6 +53,7 @@ p {
 p.descricao {
   margin-top: 5vw;
   font-size: 4vw;
+  font-weight: bolder;
   color: #FFFFFF;}
 
 p.bolinhas {

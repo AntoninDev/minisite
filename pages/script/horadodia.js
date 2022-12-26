@@ -1,6 +1,15 @@
-const escreve = document.getElementById("horaDia")
+  const escreve = document.getElementById("horaDia")
   const section = document.getElementById("escrita")
   const body = document.getElementById("body")
+   let h1 = document.createElement('h1')
+   let p = document.createElement('p')
+   let br = document.createElement('br')
+   let img = document.createElement('img')
+    escreve.appendChild(h1)
+    section.appendChild(p)
+    section.appendChild(br)
+    section.appendChild(img)
+
   setInterval( function () {
   const hora = new Date().getHours()
   if (hora >= 0 && hora <= 9) {
@@ -13,22 +22,29 @@ const escreve = document.getElementById("horaDia")
   if (hora >= 0 && hora < 6) {
     body.style.background = '#020101'
     body.style.color = 'white'
-    escreve.innerHTML = '<h1>Hora da Madrugada</h1>'
-    section.innerHTML= `<p>Boa madrugada, agora são ${horapm}:${min} e ${sec} segundos.</p><br><img src="midia/images/madrugada.png" class="imgmadrugada">`
+    h1.innerHTML = 'Hora da Madrugada'
+    p.innerHTML= `Boa madrugada, agora são ${horapm}:${min} e ${sec} segundos.`
+    img.setAttribute('src', 'midia/images/madrugada.png')
+    img.setAttribute('class', 'imgmadrugada')
   }else if (hora < 12) {
     body.style.background = '#FAF86A'
-    escreve.innerHTML = '<h1>Hora do Dia</h1>'
-    section.innerHTML= `<p>Bom dia, agora são ${horapm}:${min} e ${sec} segundos.</p><br> <img class="imgdia" src="midia/images/dia.png">`
+    h1.innerHTML = 'Hora do Dia'
+    p.innerHTML= `Bom Dia, agora são ${horapm}:${min} e ${sec} segundos.`
+    img.setAttribute('src', 'midia/images/dia.png')
+    img.setAttribute('class', 'imgdia')
     }else if (hora < 18) {
     body.style.background = '#759FF4'
-    escreve.innerHTML = '<h1>Hora da Tarde</h1>'
-    section.innerHTML= `<p>Boa tarde, agora são ${horapm}:${min} e ${sec} segundos.</p><br><img src="midia/images/tarde.png" class="imgtarde">`
+    h1.innerHTML = 'Hora da Tarde'
+    p.innerHTML= `Boa Tarde, agora são ${horapm}:${min} e ${sec} segundos.`
+    img.setAttribute('src', 'midia/images/tarde.png')
+    img.setAttribute('class', 'imgtarde')
   }else if (hora <= 23) {
     body.style.background = '#1F1F20'
     body.style.color = 'white'
-    escreve.innerHTML = '<h1>Hora da Noite</h1>'
-    section.innerHTML= `<p>Boa noite, agora são ${horapm}:${min} e ${sec} segundos.</p><br><img src="midia/images/noite.png" class="imgnoite">`
+    h1.innerHTML = 'Hora da Noite'
+    p.innerHTML= `Boa Noite, agora são ${horapm}:${min} e ${sec} segundos.`
+    img.setAttribute('src', 'midia/images/noite.png')
+    img.setAttribute('class', 'imgnoite')
   }else {
     escreve.innerHTML = '[ERROR] Hora invalida!'
   }  }, 1 );
-  
